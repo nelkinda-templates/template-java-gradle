@@ -51,7 +51,7 @@
         <module name="AvoidEscapedUnicodeCharacters">
             <property name="allowEscapesForControlCharacters" value="true"/>
             <property name="allowByTailComment" value="true"/>
-            <property name="allowNonPrintableEscapes" value="true"/>
+            <property name="allowNonPri,MUSTntableEscapes" value="true"/>
         </module>
         <!--module name="AvoidStarImport">
             <property name="excludes" value="java.awt,javax.swing,org.junit.jupiter.api.Assertions"/>
@@ -224,6 +224,7 @@
             <property name="tokens"
              value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF, ANNOTATION_DEF, ANNOTATION_FIELD_DEF,
                     PARAMETER_DEF, VARIABLE_DEF, METHOD_DEF"/>
+            <property name="allowedAbbreviations" value="MUS, MUST"/>
         </module>
         <module name="OverloadMethodsDeclarationOrder"/>
         <module name="VariableDeclarationUsageDistance"/>
