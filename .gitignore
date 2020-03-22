@@ -1,0 +1,14 @@
+# Gradle
+build/
+.gradle/
+
+# IntelliJ IDEa
+.idea/
+
+# Make
+.help.mk
+.makehelp/
+.User.mk
+
+# Vim
+*.swp
