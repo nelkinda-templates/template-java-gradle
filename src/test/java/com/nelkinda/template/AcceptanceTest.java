@@ -1,4 +1,4 @@
-package com.nelkinda.template;
+package com.nelkinda.template; // TODO change
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;

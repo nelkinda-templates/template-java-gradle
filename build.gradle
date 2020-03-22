@@ -16,7 +16,7 @@ plugins {
     id 'com.github.ben-manes.versions' version '0.28.0'
 }
 
-group 'com.nelkinda.templates' // Change this
+group 'com.nelkinda.templates' // TODO change
 version '0.0.1-SNAPSHOT'
 
 sourceCompatibility = 13
@@ -69,7 +69,7 @@ jacocoTestCoverageVerification {
 check.dependsOn jacocoTestCoverageVerification
 
 pitest {
-    targetClasses = ['com.pubport.*']
+    targetClasses = ['com.nelkinda.template.*'] // TODO change
     pitestVersion = '1.5.0'
     timestampedReports = false
     testPlugin = 'junit5'
