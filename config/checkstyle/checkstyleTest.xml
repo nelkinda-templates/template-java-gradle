@@ -51,7 +51,7 @@
         <module name="AvoidEscapedUnicodeCharacters">
             <property name="allowEscapesForControlCharacters" value="true"/>
             <property name="allowByTailComment" value="true"/>
-            <property name="allowNonPri,MUSTntableEscapes" value="true"/>
+            <property name="allowNonPrintableEscapes" value="true"/>
         </module>
         <!--module name="AvoidStarImport">
             <property name="excludes" value="java.awt,javax.swing,org.junit.jupiter.api.Assertions"/>
