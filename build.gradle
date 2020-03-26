@@ -30,16 +30,17 @@ ext {
     junitVersion = '4.13'
     junitJupiterVersion = '5.6.1'
     junitPlatformVersion = '1.6.1'
+    lombokVersion = '1.18.12'
 }
 
 dependencies {
     checkstyle 'com.puppycrawl.tools:checkstyle:8.30'
 
-    annotationProcessor 'org.projectlombok:lombok:1.18.12'
-    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor "org.projectlombok:lombok:$rootProject.ext.lombokVersion"
+    compileOnly "org.projectlombok:lombok:$rootProject.ext.lombokVersion"
 
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
-    testCompileOnly 'org.projectlombok:lombok:1.18.12'
+    testAnnotationProcessor "org.projectlombok:lombok:$rootProject.ext.lombokVersion"
+    testCompileOnly "org.projectlombok:lombok:$rootProject.ext.lombokVersion"
 
     testImplementation "io.cucumber:cucumber-java:$rootProject.ext.cucumberVersion"
     testImplementation "io.cucumber:cucumber-junit:$rootProject.ext.cucumberVersion"
