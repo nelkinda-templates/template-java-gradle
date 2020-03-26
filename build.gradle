@@ -74,7 +74,7 @@ pitest {
     timestampedReports = false
     testPlugin = 'junit5'
     outputFormats = ['XML', 'HTML']
-    mutators = ['ALL']
+    mutators = ['NEW_DEFAULTS', 'STRONGER', 'CONSTRUCTOR_CALLS', 'INLINE_CONSTS', 'REMOVE_CONDITIONALS', 'REMOVE_INCREMENTS', 'ROR']
     mutationThreshold = 100
     coverageThreshold = 100
 }
