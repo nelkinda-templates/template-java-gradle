@@ -82,7 +82,7 @@ pitest {
     timestampedReports = false
     testPlugin = 'junit5'
     outputFormats = ['XML', 'HTML']
-    mutators = ['NEW_DEFAULTS', 'STRONGER', 'CONSTRUCTOR_CALLS', 'INLINE_CONSTS', 'REMOVE_CONDITIONALS', 'REMOVE_INCREMENTS', 'ROR']
+    mutators = ['DEFAULTS', 'STRONGER', 'CONSTRUCTOR_CALLS', 'INLINE_CONSTS', 'REMOVE_CONDITIONALS', 'REMOVE_INCREMENTS', 'ROR']
     mutationThreshold = 100
     coverageThreshold = 100
 }
