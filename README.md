@@ -24,3 +24,4 @@ The reports are available locally, after running a build using `make`
 * [SonarLint Report Test](build/reports/sonarlint/sonarlintTest/report.html)
 * [Test Report](build/reports/test/test/html/index.html)
 * [Jacoco Test Coverage Report](build/reports/jacoco/test/html/index.html)
+* [PiTest Mutation Test Report](build/reports/pitest/index.html)
