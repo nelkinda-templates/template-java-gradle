@@ -76,6 +76,14 @@ jacocoTestCoverageVerification {
 }
 check.dependsOn jacocoTestCoverageVerification
 
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        csv.enabled true
+        html.enabled true
+    }
+}
+
 pitest {
     targetClasses = ['com.nelkinda.template.*'] // TODO change
     pitestVersion = '1.5.0'
