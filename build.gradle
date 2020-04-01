@@ -34,7 +34,7 @@ ext {
 }
 
 dependencies {
-    checkstyle 'com.puppycrawl.tools:checkstyle:8.30'
+    checkstyle 'com.puppycrawl.tools:checkstyle:8.31'
 
     annotationProcessor "org.projectlombok:lombok:$rootProject.ext.lombokVersion"
     compileOnly "org.projectlombok:lombok:$rootProject.ext.lombokVersion"
@@ -86,7 +86,7 @@ jacocoTestReport {
 
 pitest {
     targetClasses = ['com.nelkinda.template.*'] // TODO change
-    pitestVersion = '1.5.0'
+    pitestVersion = '1.5.1'
     timestampedReports = false
     testPlugin = 'junit5'
     outputFormats = ['XML', 'HTML']
