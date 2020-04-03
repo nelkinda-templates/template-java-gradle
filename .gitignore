@@ -3,8 +3,9 @@ build/
 .gradle/
 local.properties
 
-# IntelliJ IDEa
+# IntelliJ IDEA
 .idea/
+*.iml
 
 # Make
 .help.mk
