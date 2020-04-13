@@ -28,8 +28,8 @@ repositories {
 ext {
     cucumberVersion = '5.6.0'
     junitVersion = '4.13'
-    junitJupiterVersion = '5.6.1'
-    junitPlatformVersion = '1.6.1'
+    junitJupiterVersion = '5.6.2'
+    junitPlatformVersion = '1.6.2'
     lombokVersion = '1.18.12'
     pmdVersion = '6.22.0'
 }
