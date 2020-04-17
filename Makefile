@@ -11,7 +11,8 @@ all: build
 .PHONY: pipeline
 ## Runs the same thing as the pipeline.
 pipeline:
-	$(BUILD) $(BUILDFLAGS) build pitest
+	$(BUILD) $(BUILDFLAGS) build
+	#$(BUILD) $(BUILDFLAGS) build pitest
 
 .PHONY: continuous
 ## Builds and tests continuously.
