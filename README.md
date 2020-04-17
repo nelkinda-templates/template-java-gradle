@@ -1,4 +1,7 @@
 # template-java-gradle
+
+![CI/CD](https://github.com/nelkinda/template-java-gradle/workflows/CI/CD/badge.svg)
+
 Template for single-module Java projects at Nelkinda.
 
 ## Features
