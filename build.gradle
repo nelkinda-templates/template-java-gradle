@@ -27,6 +27,7 @@ repositories {
 
 ext {
     cucumberVersion = '5.6.0'
+    hamcrestVersion = '2.2'
     junitVersion = '4.13'
     junitJupiterVersion = '5.6.2'
     junitPlatformVersion = '1.6.2'
@@ -47,6 +48,7 @@ dependencies {
     testImplementation "io.cucumber:cucumber-junit:$rootProject.ext.cucumberVersion"
     testImplementation "io.cucumber:cucumber-junit-platform-engine:$rootProject.ext.cucumberVersion"
     testImplementation "junit:junit:$rootProject.ext.junitVersion"
+    testImplementation "org.hamcrest:hamcrest:$rootProject.ext.hamcrestVersion"
     testImplementation "org.junit.jupiter:junit-jupiter:$rootProject.ext.junitJupiterVersion"
     testImplementation "org.junit.jupiter:junit-jupiter-api:$rootProject.ext.junitJupiterVersion"
     testImplementation "org.junit.jupiter:junit-jupiter-engine:$rootProject.ext.junitJupiterVersion"
