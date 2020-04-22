@@ -1,0 +1,6 @@
+image: openjdk:13
+pipelines:
+  default:
+    - step:
+        script:
+          - bash make pipeline
