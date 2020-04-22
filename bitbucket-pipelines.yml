@@ -3,4 +3,4 @@ pipelines:
   default:
     - step:
         script:
-          - bash make pipeline
+          - bash ./gradlew build
