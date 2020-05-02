@@ -83,6 +83,7 @@ jacocoTestReport {
         html.enabled true
     }
 }
+test.finalizedBy jacocoTestReport
 
 pitest {
     targetClasses = ['com.nelkinda.template.*'] // TODO change
