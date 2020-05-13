@@ -53,6 +53,7 @@ dependencies {
     testImplementation "org.mockito:mockito-core:$rootProject.ext.mockitoVersion"
 
     pitest 'org.pitest:pitest-junit5-plugin:0.12'
+    pitest 'org.pitest:pitest-command-line:1.5.2'
 }
 
 checkstyleMain {
@@ -87,7 +88,7 @@ test.finalizedBy jacocoTestReport
 
 pitest {
     targetClasses = ['com.nelkinda.template.*'] // TODO change
-    pitestVersion = '1.5.1'
+    pitestVersion = '1.5.2'
     timestampedReports = false
     testPlugin = 'junit5'
     outputFormats = ['XML', 'HTML']
