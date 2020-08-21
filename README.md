@@ -19,7 +19,8 @@ Template for single-module Java projects at Nelkinda.
 
 <!-- TODO Replace this README -->
 ## Reports
-The reports are available locally, after running a build using `make`
+The reports are available locally, after running a build using `make`.
+
 * [Checkstyle Report Main](build/reports/checkstyle/checkstyleMain/report.html)
 * [Checkstyle Report Test](build/reports/checkstyle/checkstyleTest/report.html)
 * [PMD Report Main](build/reports/pmd/pmdMain/report.html)
