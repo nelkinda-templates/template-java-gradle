@@ -77,7 +77,7 @@ dependencies {
 }
 
 checkDependencyUpdates {
-    failIfUpdatesFound = true
+    failIfUpdatesFound = false // Workaround for sonarlint version issues.
 }
 
 checkstyleMain {
