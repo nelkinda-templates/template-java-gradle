@@ -115,14 +115,14 @@ jacocoTestReport {
 test.finalizedBy jacocoTestReport
 
 pitest {
-    targetClasses = ['com.nelkinda.template.*'] // TODO change
-    pitestVersion = '1.5.2'
-    timestampedReports = false
-    testPlugin = 'junit5'
-    outputFormats = ['XML', 'HTML']
-    mutators = ['DEFAULTS', 'STRONGER', 'CONSTRUCTOR_CALLS', 'INLINE_CONSTS', 'REMOVE_CONDITIONALS', 'REMOVE_INCREMENTS']
-    mutationThreshold = 100
-    coverageThreshold = 100
+    targetClasses.set(['com.nelkinda.template.*']) // TODO change
+    pitestVersion.set('1.5.2')
+    timestampedReports.set(false)
+    testPlugin.set('junit5')
+    outputFormats.set(['XML', 'HTML'])
+    mutators.set(['DEFAULTS', 'STRONGER', 'CONSTRUCTOR_CALLS', 'INLINE_CONSTS', 'REMOVE_CONDITIONALS', 'REMOVE_INCREMENTS'])
+    mutationThreshold.set(100)
+    coverageThreshold.set(100)
 }
 
 pmd {
