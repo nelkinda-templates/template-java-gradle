@@ -1,8 +1,8 @@
 GRADLE:=./gradlew
 GRADLEFLAGS:=--warning-mode all
-BUILD:=$(GRADLE)
+BUILD:=echo -n | $(GRADLE)
 BUILDFLAGS:=$(GRADLEFLAGS)
-GRADLE_BOOTSTRAP:=$(firstword $(wildcard $(GRADLE) $(shell which gradle)))
+GRADLE_BOOTSTRAP:=echo -n | $(firstword $(wildcard $(GRADLE) $(shell which gradle)))
 
 .PHONY: all
 ## Builds and verifies the project.
@@ -21,33 +21,33 @@ continuous:
 
 .PHONY: build
 ## Builds and verifies the project.
-build: $(BUILD)
+build: $(GRADLE)
 	$(BUILD) $(BUILDFLAGS) $@
 
 .PHONY: clean
-clean:: $(BUILD)
+clean:: $(GRADLE)
 	$(BUILD) $(BUILDFLAGS) $@
 
 .PHONY: run bootRun
 ## Runs the application.
 run: bootRun
-bootRun: $(BUILD)
+bootRun: $(GRADLE)
 	$(BUILD) $(BUILDFLAGS) $@
 
 .PHONY: pitest
 ## Runs the Pitest mutation tests.
-pitest: $(BUILD)
+pitest: $(GRADLE)
 	$(BUILD) $(BUILDFLAGS) $@
 
 .PHONY: checkUpdates
 ## Checks for dependency updates.
-checkUpdates: $(BUILD)
+checkUpdates: $(GRADLE)
 	$(BUILD) $(BUILDFLAGS) $@
 
 .PHONY: wrapper
 ## Generates the wrapper.
-wrapper: $(BUILD)
-$(BUILD):
+wrapper: $(GRADLE)
+$(GRADLE):
 	$(GRADLE_BOOTSTRAP) wrapper
 
 .PHONY: sonard
