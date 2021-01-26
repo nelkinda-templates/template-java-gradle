@@ -11,8 +11,8 @@ all: build
 .PHONY: pipeline
 ## Runs the same thing as the pipeline.
 pipeline:
-	$(BUILD) $(BUILDFLAGS) checkUpdates build
-	#$(BUILD) $(BUILDFLAGS) checkUpdates build pitest
+	$(BUILD) $(BUILDFLAGS) build
+	#$(BUILD) $(BUILDFLAGS) build pitest
 
 .PHONY: continuous
 ## Builds and tests continuously.
@@ -37,11 +37,6 @@ bootRun: $(GRADLE)
 .PHONY: pitest
 ## Runs the Pitest mutation tests.
 pitest: $(GRADLE)
-	$(BUILD) $(BUILDFLAGS) $@
-
-.PHONY: checkUpdates
-## Checks for dependency updates.
-checkUpdates: $(GRADLE)
 	$(BUILD) $(BUILDFLAGS) $@
 
 .PHONY: wrapper
