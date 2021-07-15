@@ -38,11 +38,11 @@ dependencyManagement {
             entry 'junit-jupiter-engine'
             entry 'junit-jupiter-params'
         }
-        dependencySet(group: 'org.junit.platform', version: '1.7.1') {
+        dependencySet(group: 'org.junit.platform', version: '1.7.2') {
             entry 'junit-platform-commons'
             entry 'junit-platform-engine'
         }
-        dependency 'org.junit.vintage:junit-vintage-engine:5.7.1'
+        dependency 'org.junit.vintage:junit-vintage-engine:5.7.2'
         dependency 'org.mockito:mockito-core:3.8.0'
         dependency 'org.pitest:pitest-junit5-plugin:0.14'
         dependency 'org.pitest:pitest-command-line:1.6.7'
