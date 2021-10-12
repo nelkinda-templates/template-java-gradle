@@ -5,7 +5,7 @@ plugins {
     id 'name.remal.sonarlint' version '1.5.0'
     id 'org.sonarqube' version '3.3'
     id 'jacoco'
-    id 'info.solidsoft.pitest' version '1.6.0'
+    id 'info.solidsoft.pitest' version '1.7.0'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 }
 
@@ -44,7 +44,7 @@ dependencyManagement {
         }
         dependency 'org.junit.vintage:junit-vintage-engine:5.8.1'
         dependency 'org.mockito:mockito-core:3.12.4'
-        dependency 'org.pitest:pitest-junit5-plugin:0.14'
+        dependency 'org.pitest:pitest-junit5-plugin:0.15'
         dependency 'org.pitest:pitest-command-line:1.7.0'
         dependency 'org.projectlombok:lombok:1.18.20'
     }
@@ -111,7 +111,7 @@ test.finalizedBy jacocoTestReport
 
 pitest {
     targetClasses.set(['com.nelkinda.template.*']) // TODO change
-    pitestVersion.set('1.5.2')
+    pitestVersion.set('1.7.1')
     timestampedReports.set(false)
     testPlugin.set('junit5')
     outputFormats.set(['XML', 'HTML'])
