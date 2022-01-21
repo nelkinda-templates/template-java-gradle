@@ -32,20 +32,20 @@ dependencyManagement {
             entry 'pmd-core'
             entry 'pmd-java'
         }
-        dependencySet(group: 'org.junit.jupiter', version: '5.8.1') {
+        dependencySet(group: 'org.junit.jupiter', version: '5.8.2') {
             entry 'junit-jupiter'
             entry 'junit-jupiter-api'
             entry 'junit-jupiter-engine'
             entry 'junit-jupiter-params'
         }
-        dependencySet(group: 'org.junit.platform', version: '1.8.1') {
+        dependencySet(group: 'org.junit.platform', version: '1.8.2') {
             entry 'junit-platform-commons'
             entry 'junit-platform-engine'
         }
-        dependency 'org.junit.vintage:junit-vintage-engine:5.8.1'
+        dependency 'org.junit.vintage:junit-vintage-engine:5.8.2'
         dependency 'org.mockito:mockito-core:4.2.0'
         dependency 'org.pitest:pitest-junit5-plugin:0.15'
-        dependency 'org.pitest:pitest-command-line:1.7.1'
+        dependency 'org.pitest:pitest-command-line:1.7.3'
         dependency 'org.projectlombok:lombok:1.18.22'
     }
 }
@@ -111,7 +111,7 @@ test.finalizedBy jacocoTestReport
 
 pitest {
     targetClasses.set(['com.nelkinda.template.*']) // TODO change
-    pitestVersion.set('1.7.1')
+    pitestVersion.set('1.7.3')
     timestampedReports.set(false)
     testPlugin.set('junit5')
     outputFormats.set(['XML', 'HTML'])
