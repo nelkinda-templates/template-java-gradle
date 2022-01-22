@@ -26,7 +26,6 @@ dependencyManagement {
             entry 'cucumber-junit'
             entry 'cucumber-junit-platform-engine'
         }
-        dependency 'junit:junit:4.13.2'
         dependencySet(group: 'net.sourceforge.pmd', version: '6.41.0') {
             entry 'pmd'
             entry 'pmd-core'
@@ -46,7 +45,6 @@ dependencyManagement {
             entry 'junit-platform-suite-commons'
             entry 'junit-platform-suite-engine'
         }
-        dependency 'org.junit.vintage:junit-vintage-engine:5.8.2'
         dependency 'org.mockito:mockito-core:4.2.0'
         dependency 'org.pitest:pitest-junit5-plugin:0.15'
         dependency 'org.pitest:pitest-command-line:1.7.3'
