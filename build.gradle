@@ -12,7 +12,7 @@ plugins {
 group 'com.nelkinda.templates' // TODO change
 version '0.0.1-SNAPSHOT'
 
-sourceCompatibility = 14
+sourceCompatibility = 17
 
 repositories {
     mavenCentral()
