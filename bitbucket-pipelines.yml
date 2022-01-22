@@ -1,4 +1,4 @@
-image: openjdk:14
+image: openjdk:17
 pipelines:
   default:
     - step:
