@@ -5,7 +5,7 @@ plugins {
     id 'name.remal.sonarlint' version '1.5.0'
     id 'org.sonarqube' version '3.3'
     id 'jacoco'
-    id 'info.solidsoft.pitest' version '1.7.0'
+    id 'info.solidsoft.pitest' version '1.7.4'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 }
 
@@ -116,7 +116,7 @@ test.finalizedBy jacocoTestReport
 
 pitest {
     targetClasses.set(['com.nelkinda.template.*']) // TODO change
-    pitestVersion.set('1.7.3')
+    pitestVersion.set('1.7.4')
     timestampedReports.set(false)
     testPlugin.set('junit5')
     outputFormats.set(['XML', 'HTML'])
