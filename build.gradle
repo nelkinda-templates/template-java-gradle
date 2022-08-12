@@ -37,7 +37,7 @@ dependencyManagement {
             entry 'junit-jupiter-engine'
             entry 'junit-jupiter-params'
         }
-        dependencySet(group: 'org.junit.platform', version: '1.8.2') {
+        dependencySet(group: 'org.junit.platform', version: '1.9.0') {
             entry 'junit-platform-commons'
             entry 'junit-platform-engine'
             entry 'junit-platform-launcher'
@@ -46,7 +46,7 @@ dependencyManagement {
             entry 'junit-platform-suite-engine'
         }
         dependency 'org.mockito:mockito-core:4.6.1'
-        dependency 'org.pitest:pitest-junit5-plugin:0.15'
+        dependency 'org.pitest:pitest-junit5-plugin:1.0.0'
         dependency 'org.pitest:pitest-command-line:1.9.4'
         dependency 'org.projectlombok:lombok:1.18.24'
     }
