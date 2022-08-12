@@ -31,7 +31,7 @@ dependencyManagement {
             entry 'pmd-core'
             entry 'pmd-java'
         }
-        dependencySet(group: 'org.junit.jupiter', version: '5.8.2') {
+        dependencySet(group: 'org.junit.jupiter', version: '5.9.0') {
             entry 'junit-jupiter'
             entry 'junit-jupiter-api'
             entry 'junit-jupiter-engine'
