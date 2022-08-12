@@ -47,7 +47,7 @@ dependencyManagement {
         }
         dependency 'org.mockito:mockito-core:4.6.1'
         dependency 'org.pitest:pitest-junit5-plugin:0.15'
-        dependency 'org.pitest:pitest-command-line:1.7.4'
+        dependency 'org.pitest:pitest-command-line:1.9.4'
         dependency 'org.projectlombok:lombok:1.18.24'
     }
 }
@@ -116,7 +116,7 @@ test.finalizedBy jacocoTestReport
 
 pitest {
     targetClasses.set(['com.nelkinda.template.*']) // TODO change
-    pitestVersion.set('1.7.4')
+    pitestVersion.set('1.9.4')
     timestampedReports.set(false)
     testPlugin.set('junit5')
     outputFormats.set(['XML', 'HTML'])
