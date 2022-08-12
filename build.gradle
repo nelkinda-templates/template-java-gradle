@@ -23,7 +23,6 @@ dependencyManagement {
         dependency 'com.puppycrawl.tools:checkstyle:10.3'
         dependencySet(group: 'io.cucumber', version: '7.2.3') {
             entry 'cucumber-java'
-            entry 'cucumber-junit'
             entry 'cucumber-junit-platform-engine'
         }
         dependencySet(group: 'net.sourceforge.pmd', version: '6.43.0') {
@@ -31,13 +30,13 @@ dependencyManagement {
             entry 'pmd-core'
             entry 'pmd-java'
         }
-        dependencySet(group: 'org.junit.jupiter', version: '5.8.2') {
+        dependencySet(group: 'org.junit.jupiter', version: '5.9.0') {
             entry 'junit-jupiter'
             entry 'junit-jupiter-api'
             entry 'junit-jupiter-engine'
             entry 'junit-jupiter-params'
         }
-        dependencySet(group: 'org.junit.platform', version: '1.8.2') {
+        dependencySet(group: 'org.junit.platform', version: '1.9.0') {
             entry 'junit-platform-commons'
             entry 'junit-platform-engine'
             entry 'junit-platform-launcher'
@@ -61,7 +60,6 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok'
 
     testImplementation 'io.cucumber:cucumber-java'
-    testImplementation 'io.cucumber:cucumber-junit'
     testImplementation 'io.cucumber:cucumber-junit-platform-engine'
     testImplementation 'junit:junit'
     testImplementation 'org.junit.jupiter:junit-jupiter'
